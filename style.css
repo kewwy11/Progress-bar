@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(197, 219, 238);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h2{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.fa-figma{
+    font-size: 36px;
+    color: rgb(12, 62, 95);
+}
+
+.fa-html5{
+    font-size: 36px;
+    color: rgb(199, 62, 13);
+}
+
+.fa-css3-alt{
+    font-size: 36px;
+    color: rgb(3, 3, 112);
+}
+
+.fa-square-js{
+    font-size: 36px;
+    color: rgb(214, 214, 2)
+}
+
+.fa-vuejs{
+    font-size: 36px;
+    color: rgb(1, 39, 14);
+}
+
+.container{
+    text-align: center;
+}
+    
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.progress-container::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(184, 182, 182);
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.progress{
+    position: absolute;
+    background-color: rgb(15, 110, 15);
+    height: 4px;
+    width: 0%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+ 
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(197, 219, 238);
+    /*color: rgb(197, 219, 238);*/
+    border: 3px solid rgb(184, 182, 182);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle.active{
+    border-color: rgb(15, 110, 15);
+}
+
+.btn{
+    font-size: 1rem;
+    padding: 12px 30px;
+    background-color: rgb(15, 110, 15);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    margin: 10px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background: rgb(184, 182, 182);
+}
+
+.btn:focus{
+    outline:0px;
+}
